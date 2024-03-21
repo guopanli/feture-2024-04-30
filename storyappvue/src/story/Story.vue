@@ -1,18 +1,19 @@
 <template>
     <div>
-        <button @click="change">{{title}}</button><br/>
-        {{formData.type}}<br/>
+        <p>{{textarea}}</p>
         <button @click="$emit('changeComponent','read')">跳转</button>
     </div>
 </template>
 <script setup>
 // 声明接收父组件传递的属性值：自定义属性
-import { reactive } from 'vue' 
+import { reactive,ref } from 'vue' 
 
 let formData = reactive({
     type:"233243245",
     number:0
 })
+
+let textarea = ref('')
 
 let propsData = defineProps({
     title: {
@@ -27,6 +28,7 @@ let propsData = defineProps({
     }
 })
 const emit = defineEmits(["changeComponent"]);
+
 function change(){
     emit("changeComponent","read")
 }

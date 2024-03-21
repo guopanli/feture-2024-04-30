@@ -1,9 +1,10 @@
 import './assets/main.css'
-import 'element-ui/lib/theme-chalk/index.css'
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import Axios from 'axios'
 import ElementPlus from 'element-plus' //全局引入
+import 'element-plus/dist/index.css'
 
 
 const app = createApp(App)

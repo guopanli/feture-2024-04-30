@@ -9,12 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tinymce/tinymce-vue": "^4.0.7",
     "axios": "^1.6.8",
     "element-plus": "^2.6.1",
+    "tinymce": "^7.0.0",
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "babel-plugin-component": "^1.1.1",
     "vite": "^5.1.6"
   }
 }
